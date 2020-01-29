@@ -57,7 +57,7 @@ body {
 
 // Font tags //
 
-h1 {
+h1, .h1 {
 	font-size: 32px;
 	line-height: 36px;
 	color: $navy;
@@ -79,7 +79,7 @@ h1 {
 	}
 }
 
-h2 {
+h2, .h2 {
 	font-size: 30px;
 	line-height: 32px;
 	color: $navy;
@@ -101,7 +101,7 @@ h2 {
 	}
 }
 
-h3 {
+h3, .h3 {
 	font-size: 24px;
 	line-height: 27px;
 	color: $navy;
@@ -150,7 +150,7 @@ h3 {
 }
 */
 
-h4 {
+h4, .h4 {
 	font-size: 20px;
 	line-height: 24px;
 	color: $dusk-blue;
@@ -173,7 +173,7 @@ h4 {
 }
 
 // Sub-headers
-h5 {
+h5, .h5 {
 	font-size: 20px;
 	line-height: 22px;
 	color: $cool-grey;
@@ -195,7 +195,7 @@ h5 {
 	}
 }
 
-h6 {
+h6, .h6 {
 	font-size: 24px;
 	line-height: 27px;
 	color: $navy;
@@ -218,7 +218,7 @@ h6 {
 	}
 }
 
-p, ul, ol, li {
+p, .p, ul, ol, li {
 	font-size: 16px;
 	line-height: 20px;
 	color: $dusk-blue;
@@ -320,6 +320,39 @@ ul {
 	background-color: rgba(157, 167, 178, 0.25);
 }
 
+// List bullet colors //
+
+ul {
+	&.list-colors {
+
+		list-style: none;
+
+		li::before {
+			content: "\25A0";
+			font-weight: bold; 
+			display: inline-block; 
+		    width: 15px;
+    		margin-left: -23px;
+		}
+
+		&.list-cool-blue {
+
+			li::before {
+				color: $cool-blue;
+			}
+
+		}
+
+		&.list-dusk-blue {
+
+			li::before {
+				color: $dusk-blue;
+			}
+
+		}
+	}
+}
+
 
 ///////////
 // Links //
@@ -414,6 +447,47 @@ ul {
 	@media (min-width: 768px) {
 
 		margin-top: 6rem !important;
+
+	}
+}
+
+.p-6 {
+
+	padding: 3rem !important;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		padding: 6rem !important;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+
+		padding: 6rem 8rem !important;
+
+	}
+}
+
+.py-6 {
+
+	padding-top: 3rem !important;
+	padding-bottom: 3rem !important;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		padding-top: 6rem !important;
+		padding-bottom: 6rem !important;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+
+		padding-top: 6rem !important;
+		padding-bottom: 6rem !important;
 
 	}
 }

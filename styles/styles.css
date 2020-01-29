@@ -10,43 +10,43 @@ body {
     font-family:neue-haas-grotesk-display, sans-serif;
     font-weight:400; 
 }*/
-h1 {
+h1, .h1 {
   font-size: 32px;
   line-height: 36px;
   color: #01243b; }
   @media (min-width: 768px) {
-    h1 {
+    h1, .h1 {
       font-size: 32px;
       line-height: 36px; } }
   @media (min-width: 1200px) {
-    h1 {
+    h1, .h1 {
       font-size: 60px;
       line-height: 68px; } }
 
-h2 {
+h2, .h2 {
   font-size: 30px;
   line-height: 32px;
   color: #01243b; }
   @media (min-width: 768px) {
-    h2 {
+    h2, .h2 {
       font-size: 28px;
       line-height: 32px; } }
   @media (min-width: 1200px) {
-    h2 {
+    h2, .h2 {
       font-size: 50px;
       line-height: 60px; } }
 
-h3 {
+h3, .h3 {
   font-size: 24px;
   line-height: 27px;
   color: #01243b;
   font-weight: 400; }
   @media (min-width: 768px) {
-    h3 {
+    h3, .h3 {
       font-size: 20px;
       line-height: 28px; } }
   @media (min-width: 1200px) {
-    h3 {
+    h3, .h3 {
       font-size: 40px;
       line-height: 50px; } }
 
@@ -74,56 +74,56 @@ h3 {
 	}
 }
 */
-h4 {
+h4, .h4 {
   font-size: 20px;
   line-height: 24px;
   color: #21578a; }
   @media (min-width: 768px) {
-    h4 {
+    h4, .h4 {
       font-size: 20px;
       line-height: 28px; } }
   @media (min-width: 1200px) {
-    h4 {
+    h4, .h4 {
       font-size: 26px;
       line-height: 30px; } }
 
-h5 {
+h5, .h5 {
   font-size: 20px;
   line-height: 22px;
   color: #9da7b2; }
   @media (min-width: 768px) {
-    h5 {
+    h5, .h5 {
       font-size: 16px;
       line-height: 18px; } }
   @media (min-width: 1200px) {
-    h5 {
+    h5, .h5 {
       font-size: 26px;
       line-height: 30px; } }
 
-h6 {
+h6, .h6 {
   font-size: 24px;
   line-height: 27px;
   color: #01243b;
   font-weight: 700; }
   @media (min-width: 768px) {
-    h6 {
+    h6, .h6 {
       font-size: 20px;
       line-height: 28px; } }
   @media (min-width: 1200px) {
-    h6 {
+    h6, .h6 {
       font-size: 26px;
       line-height: 30px; } }
 
-p, ul, ol, li {
+p, .p, ul, ol, li {
   font-size: 16px;
   line-height: 20px;
   color: #21578a; }
   @media (min-width: 768px) {
-    p, ul, ol, li {
+    p, .p, ul, ol, li {
       font-size: 12px;
       line-height: 16px; } }
   @media (min-width: 1200px) {
-    p, ul, ol, li {
+    p, .p, ul, ol, li {
       font-size: 24px;
       line-height: 35px; } }
 
@@ -177,6 +177,19 @@ ul {
 .bg-cool-grey-transparent {
   background-color: rgba(157, 167, 178, 0.25); }
 
+ul.list-colors {
+  list-style: none; }
+  ul.list-colors li::before {
+    content: "\25A0";
+    font-weight: bold;
+    display: inline-block;
+    width: 15px;
+    margin-left: -23px; }
+  ul.list-colors.list-cool-blue li::before {
+    color: #3397d3; }
+  ul.list-colors.list-dusk-blue li::before {
+    color: #21578a; }
+
 .button {
   padding: 10px 30px;
   font-size: 16px;
@@ -224,6 +237,27 @@ ul {
   @media (min-width: 768px) {
     .mt-6 {
       margin-top: 6rem !important; } }
+
+.p-6 {
+  padding: 3rem !important; }
+  @media (min-width: 768px) {
+    .p-6 {
+      padding: 6rem !important; } }
+  @media (min-width: 1200px) {
+    .p-6 {
+      padding: 6rem 8rem !important; } }
+
+.py-6 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important; }
+  @media (min-width: 768px) {
+    .py-6 {
+      padding-top: 6rem !important;
+      padding-bottom: 6rem !important; } }
+  @media (min-width: 1200px) {
+    .py-6 {
+      padding-top: 6rem !important;
+      padding-bottom: 6rem !important; } }
 
 .table {
   font-size: 16px;
