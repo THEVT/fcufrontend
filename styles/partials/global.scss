@@ -1,0 +1,479 @@
+
+
+/////////////////////////
+// Bootstrap overrides //
+/////////////////////////
+
+.container-fluid {
+	max-width: 1920px;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 1200px) {
+	
+	.container {
+		max-width: 1450px;
+	}
+
+}
+
+
+
+///////////////
+// Variables //
+///////////////
+
+
+// Font //
+
+$neue-haas-grotesk-display: neue-haas-grotesk-display, sans-serif;
+
+
+// Colors //
+
+$cool-grey: #9da7b2;
+$navy: #01243b;
+$tangerine: #ff970e;
+$white: #ffffff;
+$black: #000;
+$pale-grey: #f1f2f6;
+$dusk-blue: #21578a;
+$cool-blue: #3397d3;
+
+
+
+
+///////////
+// Fonts //
+///////////
+
+
+/*html,
+body {
+    font-family:neue-haas-grotesk-display, sans-serif;
+    font-weight:400; 
+}*/
+
+
+// Font tags //
+
+h1 {
+	font-size: 32px;
+	line-height: 36px;
+	color: $navy;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 32px;
+		line-height: 36px;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 60px;
+		line-height: 68px;
+
+	}
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 32px;
+	color: $navy;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 28px;
+		line-height: 32px;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 50px;
+		line-height: 60px;
+
+	}
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 27px;
+	color: $navy;
+	font-weight: 400;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 20px;
+		line-height: 28px;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 40px;
+		line-height: 50px;
+
+	}
+}
+
+
+/*
+h3 {
+	font-size: 24px;
+	line-height: 27px;
+	color: $navy;
+	font-weight: 700;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 20px;
+		line-height: 28px;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 26px;
+		line-height: 30px;
+
+	}
+}
+*/
+
+h4 {
+	font-size: 20px;
+	line-height: 24px;
+	color: $dusk-blue;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 20px;
+		line-height: 28px;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 26px;
+		line-height: 30px;
+
+	}
+}
+
+// Sub-headers
+h5 {
+	font-size: 20px;
+	line-height: 22px;
+	color: $cool-grey;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 16px;
+		line-height: 18px;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 26px;
+		line-height: 30px;
+
+	}
+}
+
+h6 {
+	font-size: 24px;
+	line-height: 27px;
+	color: $navy;
+	font-weight: 700;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 20px;
+		line-height: 28px;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 26px;
+		line-height: 30px;
+
+	}
+}
+
+p, ul, ol, li {
+	font-size: 16px;
+	line-height: 20px;
+	color: $dusk-blue;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 12px;
+		line-height: 16px;
+
+	}
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 24px;
+		line-height: 35px;
+
+	}
+}
+
+ul {
+	padding-left: 25px;
+}
+
+.small-text {
+
+	font-size: 12px;
+	line-height: 16px;
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 18px;
+		line-height: 24px;
+
+	}
+}
+
+
+////////////
+// Colors //
+////////////
+
+
+// Font colors //
+.cool-grey {
+	color: $cool-grey;
+}
+
+.navy {
+	color: $navy;
+}
+
+.tangerine {
+	color: $tangerine;
+}
+
+.white {
+	color: $white;
+}
+
+.black {
+	color: $black;
+}
+
+.pale-grey {
+	color: $pale-grey;
+}
+
+.dusk-blue {
+	color: $dusk-blue;
+}
+
+.cool-blue {
+	color: $cool-blue;
+}
+
+
+// Background Colors //
+
+.bg-dusk-blue {
+	background-color: $dusk-blue;
+}
+
+.bg-cool-blue {
+	background-color: $cool-blue;
+}
+
+.bg-pale-grey {
+	background-color: $pale-grey;
+}
+
+.bg-cool-grey {
+	background-color: $cool-grey;
+}
+
+.bg-cool-grey-transparent {
+	background-color: rgba(157, 167, 178, 0.25);
+}
+
+
+///////////
+// Links //
+///////////
+
+.button {
+    padding: 10px 30px;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 20px;
+    display: inline-block;
+    border-style: none;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		font-size: 12px;
+
+	}
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 24px;
+
+	}
+
+	&.button-small {
+		padding: 6px 27px;
+	}
+
+	&.large-standard {
+
+		// Medium devices (tablets, 768px and up)
+		@media (min-width: 768px) {
+
+			width: 218px;
+
+		}
+
+		// Large devices (desktops, 992px and up)
+		@media (min-width: 1200px) {
+			
+			width: 411px;
+
+		}
+	}
+}
+
+.button-blue {
+	background-color: $dusk-blue;
+	color: #fff;
+
+	&:hover {
+		color: #fff;
+		background-color: #14314c;
+		text-decoration: none;
+	}
+}
+
+.button-tangerine {
+	background-color: $tangerine;
+	color: #fff;
+
+	&:hover {
+		color: #fff;
+		background-color: #de830b;
+		text-decoration: none;
+	}
+}
+
+
+////////////
+// Images //
+////////////
+
+.img-width-auto {
+	width: auto;
+    max-width: 100%;
+}
+
+
+/////////////
+// Spacers //
+/////////////
+
+.mt-6 {
+
+	margin-top: 3rem !important;
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
+
+		margin-top: 6rem !important;
+
+	}
+}
+
+////////////
+// Tables //
+////////////
+
+.table {
+	font-size: 16px;
+	text-align: center;
+
+	// x-Large devices (desktops, 992px and up)
+	@media (min-width: 1200px) {
+		
+		font-size: 27px;
+
+	}
+
+	thead {
+		color: $white;
+
+		th {
+			background-color: $cool-blue;
+		    font-weight: 400;
+		    border-bottom: 2px solid $white;
+		    vertical-align: middle;
+
+			// x-Large devices (desktops, 992px and up)
+			@media (min-width: 1200px) {
+				
+				font-size: 24px;
+
+			}
+		}
+	}
+
+	tbody {
+		color: $dusk-blue;
+		tr {
+
+			td {
+				padding: .3rem .75rem;
+			}
+
+			td:first-child {
+				text-align: left;
+			}
+
+			&:nth-of-type(even) {
+			    background-color: $pale-grey;
+			}
+		}
+	}
+
+	&.table-bordered {
+	    border: 2px solid $white;
+
+	    td, th {
+	    	border: 2px solid $white;
+	    }
+	}
+}

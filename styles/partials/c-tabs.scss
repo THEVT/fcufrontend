@@ -1,0 +1,154 @@
+.c-tabs {
+
+	// Mobile
+	.accordion {
+
+		.card {
+
+			border: none;
+
+			.card-header {
+				padding: 0;
+    			border-bottom: 4px solid #fff;
+
+				.btn {
+					width: 100%;
+				    text-align: left;
+				    background-color: $tangerine;
+				    padding: 15px 25px;
+				    font-size: 24px;
+				    color: $white;
+				    border-radius: 0;
+				    text-decoration: none;
+
+				    &.collapsed {
+				    	background-color: $dusk-blue;
+				    }
+				}
+			}
+
+		}
+
+	}
+
+	// Tablet, Desktop
+	.nav {
+
+		.nav-item {
+
+			border-left: 1px solid #fff;
+			border-right: 1px solid #fff;
+
+			.nav-link {
+
+				font-size: 24px;
+				line-height: 27px;
+				background-color: $dusk-blue;
+
+				&:hover {
+					color: $white;
+					background-color: $navy;
+				}
+
+				&.active {
+					background-color: $tangerine;
+				}
+
+				// Medium devices (tablets, 768px and up)
+				@media (min-width: 768px) {
+
+					font-size: 12px;
+					line-height: 16px;
+
+				}
+
+				// Large devices (desktops, 992px and up)
+				@media (min-width: 992px) {
+					
+					font-size: 20px;
+					line-height: 38px;
+
+				}
+
+				// x-Large devices (desktops, 1200px and up)
+				@media (min-width: 1200px) {
+					
+					font-size: 28px;
+					line-height: 38px;
+
+				}
+			}
+		}
+	}
+
+	&.vertical-tabs {
+
+		.row {
+
+			// Medium devices (tablets, 768px and up)
+			@media (min-width: 768px) {
+
+				min-height: 450px;
+
+			}
+
+			// x-Large devices (desktops, 1200px and up)
+			@media (min-width: 1200px) {
+
+				min-height: 600px;
+
+			}
+		}
+
+		.checkbox-image {
+
+			h3 {
+
+				// Medium devices (tablets, 768px and up)
+				@media (min-width: 768px) {
+
+					line-height: 20px;
+
+				}
+
+				// x-Large devices (desktops, 1200px and up)
+				@media (min-width: 1200px) {
+					line-height: 40px;
+				}
+			}
+
+			img {
+
+				width: 11px;
+
+				// x-Large devices (desktops, 1200px and up)
+				@media (min-width: 1200px) {
+					
+					width: 40px;
+
+				}
+			}
+		}
+
+		.nav-pills {
+
+			height: 100%;
+
+			.nav-link {
+				height: 25%;
+				border-radius: 0;
+				border-bottom: 3px solid $white;
+				background-color: $cool-grey;
+
+				&.active {
+					background-color: $dusk-blue;
+				}
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
+	}
+}

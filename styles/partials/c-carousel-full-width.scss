@@ -1,0 +1,16 @@
+.c-carousel-full-width {
+
+	&__card {
+		height: 480px;
+		background-color: $dusk-blue;
+		color: #fff;
+		padding: 0 5% 0 2%;
+		border-right: 1px solid #fff;
+
+	}
+
+	&__copy {
+		color: #fff;
+
+	}
+}
