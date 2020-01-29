@@ -1,0 +1,48 @@
+.c-carousel-numbered-squares {
+	.copy {
+
+	}
+
+	.square-number {
+
+		font-size: 154px;
+		line-height: 169px;
+
+		// Medium devices (tablets, 768px and up)
+		@media (min-width: 768px) {
+			font-size: 99px;
+			line-height: 115px;
+		}
+
+		// x-Large devices (desktops, 992px and up)
+		@media (min-width: 1200px) {
+			font-size: 190px;
+			line-height: 215px;
+		}
+
+	}
+
+	.bg-dusk-blue {
+
+		.square-number {
+			color: #1d4e7c;
+		}
+
+	}
+
+	.bg-pale-grey {
+
+		.square-number {
+			color: #dfdfe2;
+		}
+
+	}
+
+	.bg-cool-blue {
+
+		.square-number {
+			color: #328dc4;
+		}
+
+	}
+}

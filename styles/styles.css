@@ -329,6 +329,27 @@ ul.list-colors {
 .c-carousel-icons__copy p {
   font-weight: 600; }
 
+.c-carousel-numbered-squares .square-number {
+  font-size: 154px;
+  line-height: 169px; }
+  @media (min-width: 768px) {
+    .c-carousel-numbered-squares .square-number {
+      font-size: 99px;
+      line-height: 115px; } }
+  @media (min-width: 1200px) {
+    .c-carousel-numbered-squares .square-number {
+      font-size: 190px;
+      line-height: 215px; } }
+
+.c-carousel-numbered-squares .bg-dusk-blue .square-number {
+  color: #1d4e7c; }
+
+.c-carousel-numbered-squares .bg-pale-grey .square-number {
+  color: #dfdfe2; }
+
+.c-carousel-numbered-squares .bg-cool-blue .square-number {
+  color: #328dc4; }
+
 .c-carousel-timeline .line {
   width: 100%;
   border-bottom: 3px solid #000; }
