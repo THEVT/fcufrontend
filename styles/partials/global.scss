@@ -43,6 +43,92 @@ $cool-blue: #3397d3;
 
 
 
+
+////////////////
+// Body, html //
+////////////////
+
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+*:focus{
+    outline: none;
+}
+
+html,
+body {
+    margin: 0px;
+    font-family:neue-haas-grotesk-display, sans-serif;
+    min-width: 320px;
+    font-weight:400;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+	scroll-behavior: smooth;  
+}
+
+
+
+
+////////////////
+// Responsive //
+////////////////
+
+.display-mobile,
+.hidden-desktop,
+.hidden-tablet {
+    display: block;
+}
+
+.display-tablet,
+.display-desktop,
+.hidden-mobile {
+    display: none;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+	.display-tablet,
+    .hidden-desktop,
+    .hidden-mobile {
+        display: block;
+    }
+
+    .display-mobile,
+    .display-desktop,
+    .hidden-tablet {
+        display: none;
+    }
+
+}
+
+// x-Large devices (desktops, 992px and up)
+@media (min-width: 1300px) {
+	
+	/*declarations for show/hide content*/
+	.display-mobile,
+	.display-tablet,
+	.hidden-desktop {
+	    display: none;
+	}
+
+	.hidden-tablet,
+	.display-desktop,
+	.hidden-mobile {
+	}
+
+}
+
+
+
+
+
+
 ///////////
 // Fonts //
 ///////////
@@ -58,20 +144,21 @@ body {
 // Font tags //
 
 h1, .h1 {
-	font-size: 32px;
+	font-size: 30px;
 	line-height: 36px;
 	color: $navy;
+	font-weight: 400;
 
 	// Medium devices (tablets, 768px and up)
 	@media (min-width: 768px) {
 
-		font-size: 32px;
+		font-size: 30px;
 		line-height: 36px;
 
 	}
 
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
+	// Font size x-Large devices (desktops, 1300px and up)
+	@media (min-width: 1300px) {
 		
 		font-size: 60px;
 		line-height: 68px;
