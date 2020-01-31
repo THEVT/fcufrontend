@@ -1,40 +1,4 @@
 
-
-/*declarations for show/hide content*/
-.display-mobile,
-.display-tablet,
-.hidden-desktop {
-    display: none;
-}
-
-.hidden-tablet,
-.display-desktop,
-.hidden-mobile {
-}
-
-/*basic global site settings*/
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-*:focus{
-    outline: none;
-}
-
-html,
-body {
-    margin: 0px;
-    font-family:neue-haas-grotesk-display, sans-serif;
-    min-width: 320px;
-    font-weight:400;
-    text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-	scroll-behavior: smooth;  
-}
-
 .global-pad {
     padding-right: 2.6%;
     padding-left: 2.6%;
@@ -78,79 +42,6 @@ body {
 	max-width:74.45%;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
-p {
-    font-size: 18px;
-    line-height: 26px;
-    color: #21578A;
-}
-
-ul {
-    color: #21578A;
-}
-
-a:link{
-    color: #3397D3;
-    text-decoration:none;
-}
-
-a:visited{
-    color: #9Da7b2;
-    text-decoration:none;
-}
-
-a.button {
-    min-width: 178px;
-    line-height: 64px;
-    font-size: 24px;
-    font-weight: 800;
-    color: #fff; 
-    display: inline-block;
-    text-align: center;
-    padding: 0px 30px;
-}
-
-@media (max-width:767px){
-    a.button {
-        min-width: 100px;
-        line-height: 43px;
-        font-size: 16px;
-        padding: 0px 15px;
-        padding: 0px 15px;
-    }
-}
-
-a.button:hover {
-    background-color: #9da7b2;
-}
-
-a.button-large {
-    min-width: 355px
-}
-@media (max-width:767px){
-    a.button-large {
-        min-width: 130px;
-    }
-}
-
-a.button-blue{
-    background-color: #21578A;
- }
-
-a.button-orange{
-    background-color: #FF970E;
-}
-
-a.button-red{
-    background-color: #8A2121;
-}
-
-
-
 a.offsite-button:after{
     content:"  \f35d";
     font-family:"Font Awesome 5 Pro";
@@ -180,44 +71,15 @@ div.button-group{
     clear: both;
 }
 
-strong, b {
-    font-weight:700;
-}
-
 .no-top-margin {
     margin-top:0px;
 }
 
-.header-cta h1,
-h1 {
+.header-cta h1 {
     font-size: 60px;
     line-height: 68px;
     color: #01243B;
     font-weight: 400;
-}
-
-h2 {
-    font-size: 50px;
-    line-height: 60px;
-    color: #01243B;
-    font-weight: 400;
-}
-
-h3 {
-    font-size: 40px;
-    line-height: 50px;
-    color: #01243B;
-    font-weight: 400;
-    margin:0px;
-}
-
-h4 {
-    font-size: 26px;
-    line-height: 30px;
-    line-height: normal;
-    color: #01243B;
-    font-weight: 400;
-    margin: 0px;
 }
 
 

@@ -1,41 +1,8 @@
 @media(min-width:768px) and (max-width:1300px) {
 
-    .display-tablet,
-    .hidden-desktop,
-    .hidden-mobile {
-        display: block;
-    }
-
-    .display-mobile,
-    .display-desktop,
-    .hidden-tablet {
-        display: none;
-    }
-
-    p {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .header-cta h1,
-    h1 {
+    .header-cta h1 {
         font-size: 30px;
         line-height: 36px;
-    }
-
-    h2 {
-        font-size: 28px;
-        line-height: 32px;
-    }
-
-    h3 {
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    h4 {
-        font-size: 16px;
-        line-height: 18px;
     }
 
 
@@ -114,18 +81,6 @@
             font-size: 20px;
             line-height: 32px;
         }
-
-
-   a.button{
-        min-width: 105px;
-        line-height: 34px;
-        font-size: 12px;
-    }
-
-
- a.button-large{
-        min-width:190px;
-  }
 
     .group-button:first-of-type {
         margin: 0px;

@@ -1,42 +1,5 @@
 @media (max-width: 767px) {
 
-    .display-mobile,
-    .hidden-desktop,
-    .hidden-tablet {
-        display: block;
-    }
-
-    .display-tablet,
-    .display-desktop,
-    .hidden-mobile {
-        display: none;
-    }
-
-    p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    h1 {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
-    h2 {
-        font-size: 30px;
-        line-height: 32px;
-    }
-
-    h3 {
-        font-size: 24px;
-        line-height: 27px;
-    }
-
-    h4 {
-        font-size: 20px;
-        line-height: 22px;
-    }
-
     .header-cta h1 {
         font-size: 32px;
         line-height: 36px;
@@ -681,10 +644,6 @@ a.icon-link [class*="fa-"] {
 }
 
 @media (min-width:320px) and (max-width:400px){
-    .button {
-        width:100%;
-        margin-top:10px;
-    }
 
 .group-button:first-of-type,
 .group-button {

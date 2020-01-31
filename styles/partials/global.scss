@@ -143,6 +143,12 @@ body {
 
 // Font tags //
 
+
+strong, b {
+    font-weight:700;
+}
+
+
 h1, .h1 {
 	font-size: 30px;
 	line-height: 36px;
@@ -179,8 +185,8 @@ h2, .h2 {
 
 	}
 
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
+	// Font size x-Large devices (desktops, 1300px and up)
+	@media (min-width: 1300px) {
 		
 		font-size: 50px;
 		line-height: 60px;
@@ -193,6 +199,7 @@ h3, .h3 {
 	line-height: 27px;
 	color: $navy;
 	font-weight: 400;
+	margin:0px;
 
 	// Medium devices (tablets, 768px and up)
 	@media (min-width: 768px) {
@@ -202,8 +209,8 @@ h3, .h3 {
 
 	}
 
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
+	// Font size x-Large devices (desktops, 1300px and up)
+	@media (min-width: 1300px) {
 		
 		font-size: 40px;
 		line-height: 50px;
@@ -212,46 +219,21 @@ h3, .h3 {
 }
 
 
-/*
-h3 {
-	font-size: 24px;
-	line-height: 27px;
-	color: $navy;
-	font-weight: 700;
-
-	// Medium devices (tablets, 768px and up)
-	@media (min-width: 768px) {
-
-		font-size: 20px;
-		line-height: 28px;
-
-	}
-
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
-		
-		font-size: 26px;
-		line-height: 30px;
-
-	}
-}
-*/
-
 h4, .h4 {
 	font-size: 20px;
 	line-height: 24px;
-	color: $dusk-blue;
+	color: $navy;
 
 	// Medium devices (tablets, 768px and up)
 	@media (min-width: 768px) {
 
-		font-size: 20px;
-		line-height: 28px;
+		font-size: 16px;
+        line-height: 18px;
 
 	}
 
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
+	// Font size x-Large devices (desktops, 1300px and up)
+	@media (min-width: 1300px) {
 		
 		font-size: 26px;
 		line-height: 30px;
@@ -273,8 +255,8 @@ h5, .h5 {
 
 	}
 
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
+	// Font size x-Large devices (desktops, 1300px and up)
+	@media (min-width: 1300px) {
 		
 		font-size: 26px;
 		line-height: 30px;
@@ -296,8 +278,8 @@ h6, .h6 {
 
 	}
 
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
+	// Font size x-Large devices (desktops, 1300px and up)
+	@media (min-width: 1300px) {
 		
 		font-size: 26px;
 		line-height: 30px;
@@ -305,6 +287,8 @@ h6, .h6 {
 	}
 }
 
+
+/* It's not very clear what their base p/body font size is so right now the base is the larger of the two, adding a "small-text" will be the other. */
 p, .p, ul, ol, li {
 	font-size: 16px;
 	line-height: 20px;
@@ -318,32 +302,35 @@ p, .p, ul, ol, li {
 
 	}
 
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
+	// Font size x-Large devices (desktops, 1300px and up)
+	@media (min-width: 1300px) {
 		
 		font-size: 24px;
 		line-height: 35px;
 
 	}
+
+	&.small-text {
+
+		font-size: 12px;
+		line-height: 16px;
+
+		// Font size x-Large devices (desktops, 1300px and up)
+		@media (min-width: 1300px) {
+			
+			font-size: 18px;
+			line-height: 24px;
+
+		}
+	}
 }
 
 ul {
+	color: $dusk-blue;
 	padding-left: 25px;
 }
 
-.small-text {
 
-	font-size: 12px;
-	line-height: 16px;
-
-	// x-Large devices (desktops, 992px and up)
-	@media (min-width: 1200px) {
-		
-		font-size: 18px;
-		line-height: 24px;
-
-	}
-}
 
 
 ////////////
@@ -441,9 +428,118 @@ ul {
 }
 
 
+
+
 ///////////
 // Links //
 ///////////
+
+a {
+
+	&:link {
+		color: #3397D3;
+    	text-decoration:none;
+	}
+
+	&:visited {
+		color: #9Da7b2;
+    	text-decoration:none;
+	}
+
+	&.button {
+
+	    font-weight: 800;
+	    color: #fff; 
+	    display: inline-block;
+	    text-align: center;
+		min-width: 100px;
+        line-height: 43px;
+        font-size: 16px;
+        padding: 0px 15px;
+        padding: 0px 15px;
+
+
+		&:hover {
+		    background-color: #9da7b2;
+		}
+
+
+		@media (min-width:320px) and (max-width:400px){
+	        width:100%;
+	        margin-top:10px;
+		}
+
+
+		// Medium devices (tablets, 768px and up)
+		@media (min-width: 768px) {
+
+			min-width: 105px;
+	        line-height: 34px;
+	        font-size: 12px;
+
+		}
+
+		// Font size x-Large devices (desktops, 1300px and up)
+		@media (min-width: 1300px) {
+
+			min-width: 178px;
+		    line-height: 64px;
+		    font-size: 24px;
+		    padding: 0px 30px;
+		}
+
+
+		&.button-large {
+
+			min-width: 130px;
+
+			// Medium devices (tablets, 768px and up)
+			@media (min-width: 768px) {
+
+				min-width:190px;
+
+			}
+
+			// Font size x-Large devices (desktops, 1300px and up)
+			@media (min-width: 1300px) {
+
+			    min-width: 355px;
+			}
+
+		}
+
+		&.button-blue {
+			background-color: $dusk-blue;
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+				background-color: #14314c;
+				text-decoration: none;
+			}
+		}
+
+		&.button-tangerine {
+			background-color: $tangerine;
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+				background-color: #de830b;
+				text-decoration: none;
+			}
+		}
+
+		&.button-red{
+		    background-color: #8A2121;
+		}
+
+	}
+}
+
+
+
+
 
 .button {
     padding: 10px 30px;
@@ -511,15 +607,28 @@ ul {
 	}
 }
 
+.button-red{
+    background-color: #8A2121;
+}
+
+
+
 
 ////////////
 // Images //
 ////////////
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .img-width-auto {
 	width: auto;
     max-width: 100%;
 }
+
+
 
 
 /////////////
@@ -578,6 +687,7 @@ ul {
 
 	}
 }
+
 
 ////////////
 // Tables //
