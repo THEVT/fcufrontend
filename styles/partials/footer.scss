@@ -2,10 +2,18 @@
 
 	.newsletter {
 
+		input[type="text"] {
+
+			// Small devices (landscape phones, less than 768px)
+			@media (max-width: 450px) {
+				margin-right: 60px;
+			}
+		}
+
 		input[type="submit"] {
 
 			// Small devices (landscape phones, less than 768px)
-			@media (max-width: 767.98px) {
+			@media (max-width: 450px) {
 				margin-top: 15px;
 			}
 		}

@@ -2566,7 +2566,11 @@ nav .mainnavigation-container ul#menu .nav-dropdown-container {
   .uppernav a.topnav-button {
     padding: 0px 11px; } }
 
-@media (max-width: 767.98px) {
+@media (max-width: 450px) {
+  .connect-container .newsletter input[type="text"] {
+    margin-right: 60px; } }
+
+@media (max-width: 450px) {
   .connect-container .newsletter input[type="submit"] {
     margin-top: 15px; } }
 
@@ -2593,7 +2597,7 @@ nav .mainnavigation-container ul#menu .nav-dropdown-container {
       padding: 26px 27px 18px 22px;
       background-color: #f1f2f6;
       min-height: 169px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1300px) {
         .branchSearchResults .branchPrimaryResults .branch-select-box .branch-select-box__content {
           min-height: 232px; } }
 
@@ -2619,3 +2623,15 @@ nav .mainnavigation-container ul#menu .nav-dropdown-container {
 @media (min-width: 1300px) {
   .contact-us__main .icon-title-content-box .contact-infoblock, .contact-us__main .icon-title-content-box .contact-live-chat-block {
     min-height: 1020px; } }
+
+@media (max-width: 1299.98px) and (min-width: 768px) {
+  .contact-info-container .third {
+    padding-top: 20px; } }
+
+@media (min-width: 1300px) {
+  .contact-info-container .third {
+    padding-top: 40px; } }
+
+@media (max-width: 767px) {
+  .contact-info-container .third:first-of-type {
+    padding-top: 40px; } }
