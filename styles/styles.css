@@ -52,7 +52,15 @@ body {
   .hidden-tablet,
   .display-desktop,
   .hidden-mobile {
-    display: block; } }
+    display: block; }
+  .col-3xl-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; } }
 
 /*html,
 body {
@@ -2557,6 +2565,10 @@ nav .mainnavigation-container ul#menu .nav-dropdown-container {
 @media (min-width: 320px) and (max-width: 860px) {
   .uppernav a.topnav-button {
     padding: 0px 11px; } }
+
+@media (max-width: 767.98px) {
+  .connect-container .newsletter input[type="submit"] {
+    margin-top: 15px; } }
 
 .padded-section-container .branchSearchHeader {
   padding: 40px 0 0px; }
