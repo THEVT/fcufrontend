@@ -1,0 +1,56 @@
+nav {
+
+	// Font size x-Large devices (desktops, 1300px and up)
+	@media (min-width: 1300px) {
+		
+	    padding-bottom: 0px;
+	}
+
+	.mainnavigation-container {
+
+		// Font size x-Large devices (desktops, 1300px and up)
+		@media (min-width: 1300px) {
+			
+			padding-top: 0;
+		}
+
+		ul {
+
+			&#menu {
+
+				// Font size x-Large devices (desktops, 1300px and up)
+				@media (min-width: 1300px) {
+					
+				    padding-top: 20px;
+    				padding-bottom: 20px;
+				}
+
+				a {
+
+					&.topnav-link {
+						padding-bottom: 0;
+					}
+				}
+
+				.nav-dropdown-container {
+					top: 108px;
+				}
+			}
+		}
+	}
+}
+
+.siteSearch {
+	width: auto;
+}
+
+.uppernav {
+	a {
+		&.topnav-button {
+
+			@media (min-width:320px) and (max-width:860px){
+	            padding: 0px 11px;
+			}
+		}
+	}
+}

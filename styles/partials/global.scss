@@ -329,6 +329,25 @@ p, .p, ul, ol, li {
 ul {
 	color: $dusk-blue;
 	padding-left: 25px;
+
+	&.ul-checklist {
+		list-style: none;
+		padding-left: 40px;
+
+		li:before {
+			font-family: "Font Awesome 5 Pro"; 
+			font-weight: 900;
+			content: "\f00c";
+	        font-size: 125%;
+		    margin-left: -39px;
+	        padding-right: 10px;
+	        color: $cool-blue;
+		}
+	}
+}
+
+.font-incr-125 {
+	font-size: 125%;
 }
 
 
@@ -436,14 +455,16 @@ ul {
 ///////////
 
 a {
+	color: $dusk-blue;
+	text-decoration:none;
 
 	&:link {
-		color: #3397D3;
+		color: $dusk-blue;
     	text-decoration:none;
 	}
 
 	&:visited {
-		color: #9Da7b2;
+		//color: #9Da7b2;
     	text-decoration:none;
 	}
 

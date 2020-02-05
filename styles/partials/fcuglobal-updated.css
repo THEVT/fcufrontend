@@ -39,7 +39,7 @@
 }
 
 .d-compact{
-	max-width:74.45%;
+    max-width:74.45%;
 }
 
 a.offsite-button:after{
@@ -90,67 +90,6 @@ div.button-group{
     line-height:35px;
     font-weight:800;
 }
-
-
-.change-blue {
-    color: #21578A !important;
-}
-
-.change-ltblue {
-    color: #3397D3 !important;
-}
-
-.change-orange {
-    color: #FF970E !important;
-}
-
-/*newsfeed*/
-
-.newsfeed {
-    background-color: #F1F2F6;
-    display:table;
-    margin-left:5%;
-    float:right;
-}
-
-.newsfeed-item:first-of-type {
- margin-left:-100px;
-}
-
-.newsfeed-item {
-    float:left;
-}
-
-.newsfeed-title {
-    font-size: 26px;
-    line-height: 30px;
-    font-weight: 400;
-    color:#21578A;
-    float:left;
-    padding-top:49px;
-    padding-left:32px;
-	padding-right:20px;
-    width:193px;
-}
-
-.newsfeed-date {
-    background: transparent linear-gradient(180deg, #FF970E 0%, #9D5A02 100%) 0% 0% no-repeat padding-box;
-    border: 3px solid #FFFFFF;
-    text-align: center;
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 400;
-    color: #fff;
-    text-transform: uppercase;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    float:left;
-    width:190px;
-    height:190px;
-    padding-top:38px;
-}
-
 
 /*top navigation*/
 .forumlogo {
@@ -725,6 +664,7 @@ a.login-button {
 
 .fcucarousel{
     width:80% !important;
+    margin:auto;
 }
 
 @media(min-width:768px) and (max-width:1300px) {
@@ -733,39 +673,6 @@ a.login-button {
     }
 }
 
-
-    .fcucarousel-mainlayout .item{
-        width:100%;
-        max-width: 425px;
-        margin:0px auto;
-    }
-
-@media(min-width:768px) and (max-width:1300px) {
-    .fcucarousel-mainlayout .item{
-        width: 223px;
-    }
-}
-
-    .fcucarousel-mainlayout .fcucarousel-mainlayout__image {
-        height: 300px;
-        vertical-align: middle;
-        max-width: 93%;
-        width: auto;
-        margin: 0px auto;
-        margin-bottom: 40px;
-    }
-
-    @media(min-width:768px) and (max-width:1300px) {
-        .fcucarousel-mainlayout .fcucarousel-mainlayout__image {
-            height: 200px;
-        }
-    }
-
-    @media(max-width:767px) {
-        .fcucarousel-mainlayout .fcucarousel-mainlayout__image {
-            height: auto;
-        }
-    }
 
     .fcucarousel-shortcut {
         text-align: center;

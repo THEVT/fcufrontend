@@ -1,0 +1,72 @@
+.padded-section-container {
+
+	.branchSearchHeader {
+
+	    padding: 40px 0 0px;
+
+		// Medium devices (tablets, less than 768px)
+		@media (max-width: 767.98px) {
+			padding: 0;
+		}
+
+		.inpage-Search {
+
+		    // Medium devices (tablets, less than 992px)
+			@media (min-width: 1300px) {
+
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+
+.branchSearchResults {
+
+	.branchPrimaryResults {
+
+	    max-width: 1400px;
+    	margin: auto;
+
+		.branch-select-box {
+
+			padding: 10px;
+			margin: 0;
+			background-color: transparent;
+
+			// Medium devices (tablets, 768px and up)
+			@media (min-width: 768px) {
+
+				width: 33.33%;
+
+			}
+
+			.branch-select-box__content {
+				padding: 26px 27px 18px 22px;
+			    background-color: #f1f2f6;
+			    min-height: 169px;
+
+				// Medium devices (tablets, 768px and up)
+				@media (min-width: 768px) {
+
+					min-height: 232px;
+
+				}
+			}
+		}
+	}
+}
+
+.icon-title-content-box {
+
+	height: 100%;
+
+	.icon-title__content {
+
+		 margin-bottom: auto;
+
+		 &-bottom {
+		 	padding-top: 15px;
+		 }
+	}
+}
