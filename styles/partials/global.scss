@@ -344,6 +344,11 @@ ul {
 	&.ul-checklist {
 		list-style: none;
 		padding-left: 40px;
+		text-align: left;
+
+		li {
+		    margin-bottom: 1rem;
+		}
 
 		li:before {
 			font-family: "Font Awesome 5 Pro"; 
