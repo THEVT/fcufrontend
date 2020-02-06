@@ -2571,6 +2571,9 @@ nav .mainnavigation-container ul#menu .nav-dropdown-container {
   @media (max-width: 767.98px) {
     .padded-section-container .branchSearchHeader {
       padding: 0; } }
+  @media (max-width: 1300px) and (min-width: 768px) {
+    .padded-section-container .branchSearchHeader .inpage-Search {
+      margin-right: 0; } }
   @media (min-width: 1300px) {
     .padded-section-container .branchSearchHeader .inpage-Search {
       margin-top: 15px; } }
